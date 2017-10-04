@@ -32,7 +32,7 @@ Song.create!(name: 'Tomorrow Never Knows', album: 'Revolver', release_year: 1966
 # nirvana songs
 Song.create!(name: 'Smells Like Teen Spirit', album: 'Nevermind', release_year: 1991, band_id: nirvana.id, embed_link: 'https://www.youtube.com/embed/hTWKbfoikeg')
 Song.create!(name: 'Love Buzz', album: 'Bleach', release_year: 1988, band_id: nirvana.id, embed_link: 'https://www.youtube.com/embed/ZLthJDXbq6Y')
-Song.create!(name: 'All Apologies', album: 'In Utero', release_year: 1993, band_id: nirvana.id, embed_link: 'https://www.youtube.com/embed/0LFVQpDKHk')
+Song.create!(name: 'All Apologies', album: 'In Utero', release_year: 1993, band_id: nirvana.id, embed_link: 'https://www.youtube.com/embed/0LFVQpDKHk4')
 Song.create!(name: 'Rape Me', album: 'In Utero', release_year: 1993, band_id: nirvana.id, embed_link: 'https://www.youtube.com/embed/TqseYiGA0us' )
 Song.create!(name: 'Come As You Are', album: 'Nevermind', release_year: 1992, band_id: nirvana.id, embed_link: 'https://www.youtube.com/embed/vabnZ9-ex7o')
 Song.create!(name: 'Lithium', album: 'Nevermind', release_year: 1991, band_id: nirvana.id, embed_link:'https://www.youtube.com/embed/3fIqq5XVFKQ')

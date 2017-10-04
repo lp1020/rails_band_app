@@ -1,0 +1,11 @@
+
+  <% @bands.each do |b| %>
+  <p>
+    <div>
+      <h3><%= link_to b.name, band_path(b) %></h3>
+      <br>
+      <img src=<%= b.photo %> />
+    </div>
+  </p>
+  <% end %>
+

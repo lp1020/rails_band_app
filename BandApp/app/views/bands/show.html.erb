@@ -1,0 +1,15 @@
+<div>
+  <h3><%= @band.name %></h3>
+  <h3><%= @band.country %></h3>
+  <h3><%= @band.genre %></h3>
+  <img src=<%= @band.photo%> />
+</div>
+
+
+  <% @songs.each do |s|%>
+  <p><%= link_to s.name, song_path(s)%></p>
+  <br>
+  <% end %>
+
+
+  <%= link_to 'All bands', bands_path %>
