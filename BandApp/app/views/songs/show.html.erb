@@ -12,4 +12,4 @@ src="<%= @song.embed_link%>">
  <%= link_to 'Edit this Song!', edit_song_path %>
   <%= link_to 'Delete this Song!', song_path(@song), method: :delete,
   data: { confirm: "Are you sure you want to delete #{@song.name}?" } %>
-  <%= link_to 'All songs', songs_path %>
+  <%= link_to 'Back to Band page', band_path(@band) %>

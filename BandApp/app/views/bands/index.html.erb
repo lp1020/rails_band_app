@@ -1,13 +1,12 @@
 
   <% @bands.each do |b| %>
   <p>
-    <div>
-      <h3><%= link_to b.name, band_path(b) %></h3>
-      <br>
-      <img src=<%= b.photo %> />
+    <div class="bands-div">
+      <img class="bandPic" src=<%= b.photo %> />
+      <h3 class="bandName"><%= link_to b.name, band_path(b) %></h3>
     </div>
   </p>
   <% end %>
-  <p><%= link_to 'Add a new band!', new_band_path %></p>
-  <p><%= link_to 'Back to home page', welcome_path %></p>
+  <p class=addNewBand><%= link_to 'Add a new band!', new_band_path %></p>
+  <p class=backHome><%= link_to 'Back to home page', welcome_path %></p>
 

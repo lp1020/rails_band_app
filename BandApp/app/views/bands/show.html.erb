@@ -1,18 +1,23 @@
-<div>
+<div class="bandInfo">
   <h3><%= @band.name %></h3>
   <h3><%= @band.country %></h3>
   <h3><%= @band.genre %></h3>
+</div>
+<div class="bandPicSingle">
   <img src=<%= @band.photo%> />
 </div>
 
-
+<div class='band-song-div'>
+<div id ="songsLabel">Top Songs</div>
   <% @songs.each do |s|%>
-  <p><%= link_to s.name, song_path(s)%></p>
+  <h3 class="bandSongs"><%= link_to s.name, song_path(s)%></h3>
   <br>
   <% end %>
-
-  <%= link_to 'Add a new song!', new_band_song_path(@band) %>
-  <%= link_to 'Edit this Band!', edit_band_path %>
-  <%= link_to 'Delete this Band!', band_path(@band), method: :delete,
-  data: { confirm: "Are you sure you want to delete #{@band.name}?" } %>
-  <%= link_to 'All bands', bands_path %>
+</div>
+<div class="bandLinks">
+  <div class="linkName"><%= link_to 'Add a new song!', new_band_song_path(@band) %></div>
+  <div class="linkName"><%= link_to 'Edit this Band!', edit_band_path %></div>
+  <div class="linkName"><%= link_to 'Delete this Band!', band_path(@band), method: :delete,
+  data: { confirm: "Are you sure you want to delete #{@band.name}?" } %></div>
+  <div class="linkName"><%= link_to 'All bands', bands_path %></div>
+</div>
