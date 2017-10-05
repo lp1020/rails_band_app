@@ -8,7 +8,7 @@
 </div>
 
 <div class='band-song-div'>
-<div id ="songsLabel">Top Songs</div>
+<div id ="songsLabel">Top Tracks</div>
   <% @songs.each do |s|%>
   <h3 class="bandSongs"><%= link_to s.name, song_path(s)%></h3>
   <br>

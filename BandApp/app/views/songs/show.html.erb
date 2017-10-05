@@ -1,15 +1,23 @@
-<h1><%= @song.name %></h1>
+<div class="bandInfo2">
+<h3><%= @song.name %></h3>
 <h4>By <%= @band.name %></h4>
 <h4> <%= @band.genre %></h4>
+
+  <h5>Album: <%= @song.album %></h5>
+  <h5>Release Year: <%= @song.release_year %></h5>
+
+</div>
+<div class="bandPicSingle2">
 <img src=<%= @band.photo%> />
-<ul>
-  <li><%= @song.album %></li>
-  <li><%= @song.release_year %></li>
-</ul>
+</div>
+<div class="vid-div"><div class="listenMessage">Take a Listen!</div>
 <iframe width="420" height="315"
 src="<%= @song.embed_link%>">
 </iframe>
- <%= link_to 'Edit this Song!', edit_song_path %>
-  <%= link_to 'Delete this Song!', song_path(@song), method: :delete,
-  data: { confirm: "Are you sure you want to delete #{@song.name}?" } %>
-  <%= link_to 'Back to Band page', band_path(@band) %>
+</div>
+<div class="songLinks">
+ <div class="editSong"><%= link_to 'Edit this Song!', edit_song_path %></div>
+  <div class="deleteSong"><%= link_to 'Delete this Song!', song_path(@song), method: :delete,
+  data: { confirm: "Are you sure you want to delete #{@song.name}?" } %></div>
+  <div class="backPage"><%= link_to 'Back to Band/Artist page', band_path(@band) %></div>
+</div>

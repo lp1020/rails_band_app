@@ -1,12 +1,12 @@
-<h1>ALL MY FAVORITE SONGS</h1>
 
-<div>
+<div class="song-div">
 <ul>
   <% @songs.each do |s| %>
-  <li><%= link_to s.name, song_path(s) %></li>
+  <li class="song"><%= link_to s.name, song_path(s) %></li>
   <% end %>
 </ul>
 </div>
-
- <p><%= link_to 'Back to bands page', bands_path %></p>
-  <p><%= link_to 'Back to home page', welcome_path %></p>
+<div class="allSongLinks"
+ <p><%= link_to 'Bands/Artists page', bands_path %></p>
+  <p><%= link_to 'Home page', welcome_path %></p>
+</div>
