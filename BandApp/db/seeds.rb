@@ -49,6 +49,6 @@ Song.create!(name: 'What Ever Happened?', album: 'Room On Fire', release_year: 2
 Song.create!(name: 'Under Cover of Darkness', album: 'Angles', release_year: 2011, band_id: strokes.id, embed_link: 'https://www.youtube.com/embed/_l09H-3zzgA')
 Song.create!(name: 'You Only Live Once', album: 'First Impressions Of Earth', release_year: 2006, band_id: strokes.id, embed_link: 'https://www.youtube.com/embed/pT68FS3YbQ4')
 Song.create!(name: 'Heart In A Cage', album: 'First Impressions Of Earth', release_year: 2006, band_id: strokes.id, embed_link: 'https://www.youtube.com/embed/3dyNbMVfeyM')
-Song.create!(name: 'Ize Of The World', album: 'First Impressions Of Earth', release_year: 2006, band_id: strokes.id, embed_link: 'https://www.youtube.com/embed/4yIg-jTJCxY')
+Song.create!(name: 'Ize Of The World', album: 'First Impressions Of Earth', release_year: 2006, band_id: strokes.id, embed_link: 'https://www.youtube.com/embed/MOE-fDy1Cgo')
 
 
