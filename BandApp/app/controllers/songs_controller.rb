@@ -7,12 +7,17 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
     @band = @song.band
   end
+  def new
+    @band = Band.find(params[:band_id])
+    @song = @band.songs.new
+  end
   def create
-    @song = Song.new(song_params)
+    @band = Band.find(params[:band_id])
+    @song = @band.songs.new(song_params)
 
     respond_to do |format|
       if @song.save
-        format.html { redirect_to @song, notice: 'Post was successfully created.' }
+        format.html { redirect_to @song, notice: "Song was successfully added." }
         format.json { render :show, status: :created, location: @song }
       else
         format.html { render :new }
@@ -23,19 +28,16 @@ class SongsController < ApplicationController
   def destroy
     @song.destroy
     respond_to do |format|
-      format.html { redirect_to songs_url, notice: 'Song was successfully destroyed.' }
+      format.html { redirect_to songs_url, notice: "Song was successfully destroyed." }
       format.json { head :no_content }
     end
   end
   def edit
   end
-  def new
-    @song = Song.new
-  end
   def update
     respond_to do |format|
       if @song.update(song_params)
-        format.html { redirect_to @song, notice: 'Song was successfully updated.' }
+        format.html { redirect_to @song, notice: "#Song was successfully updated." }
       else
         format.html { render :edit }
       end

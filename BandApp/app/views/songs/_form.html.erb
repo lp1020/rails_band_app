@@ -1,0 +1,21 @@
+<%= form_for ([@band, @song]) do |f| %>
+<div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div>
+  <%= f.label :album %>
+  <%= f.text_field :album %>
+</div>
+<div>
+  <%= f.label :release_year %>
+  <%= f.text_field :release_year %>
+</div>
+<div>
+  <%= f.label :embed_link %>
+  <%= f.text_field :embed_link %>
+</div>
+<div>
+  <%= f.submit %>
+  </div>
+<% end %>

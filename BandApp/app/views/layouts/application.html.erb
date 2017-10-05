@@ -6,9 +6,26 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
   </head>
 
   <body>
+    <header>
+      <div>
+      <p id="title"><%= link_to 'BAND APP', welcome_path %></p>
+      <nav>
+      <ul>
+        <li class="nav"><%= link_to 'ALL BANDS', songs_path %></li>
+        <li class="nav"><%= link_to 'ALL SONGS', songs_path %></li>
+        <li class="nav"><%= link_to 'NEW BAND', new_band_path %></li>
+      </ul>
+    </nav>
+  </div>
+    </header>
     <%= yield %>
+    <footer>
+      <div class="footerMessage">© Liana Penn 2017</div>
+    </footer>
   </body>
 </html>

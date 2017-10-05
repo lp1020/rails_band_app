@@ -12,7 +12,7 @@ class BandsController < ApplicationController
 
     respond_to do |format|
       if @band.save
-        format.html { redirect_to @band, notice: 'Band was successfully created.' }
+        format.html { redirect_to @band, notice: "Band was successfully added." }
         format.json { render :show, status: :created, location: @band }
       else
         format.html { render :new }
@@ -23,7 +23,7 @@ class BandsController < ApplicationController
   def destroy
     @band.destroy
     respond_to do |format|
-      format.html { redirect_to bands_url, notice: 'Band was successfully destroyed.' }
+      format.html { redirect_to bands_url, notice: "Band was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -35,7 +35,7 @@ class BandsController < ApplicationController
   def update
     respond_to do |format|
       if @band.update(band_params)
-        format.html { redirect_to @band, notice: 'Band was successfully updated.' }
+        format.html { redirect_to @band, notice: "Band was successfully updated." }
       else
         format.html { render :edit }
       end
