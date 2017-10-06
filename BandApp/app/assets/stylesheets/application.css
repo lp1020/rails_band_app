@@ -63,8 +63,8 @@ a {
   font-family: 'Merriweather', serif;
 }
 footer {
-  position: absolute;
-  text-align: center;
+
+
   background-color: #564f6f;
   bottom: -320%;
   height: -5%;
@@ -73,6 +73,26 @@ footer {
   margin-top: 120px;
   justify-content: center;
   padding-top: 3%;
+}
+
+#showFooter {
+  position: absolute;
+background-color: #564f6f;
+  bottom: -120%;
+  height: -5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#formFooter {
+  position: absolute;
+background-color: #564f6f;
+  bottom: -20%;
+  height: -5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .footerMessage {
   margin-bottom: 10px;

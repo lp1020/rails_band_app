@@ -14,6 +14,7 @@
   <br>
   <% end %>
 </div>
+
 <div class="bandLinks">
   <div class="linkName"><%= link_to 'Add a new song!', new_band_song_path(@band) %></div>
   <div class="linkName"><%= link_to 'Edit this Band!', edit_band_path %></div>
@@ -21,3 +22,6 @@
   data: { confirm: "Are you sure you want to delete #{@band.name}?" } %></div>
   <div class="linkName"><%= link_to 'All bands', bands_path %></div>
 </div>
+<footer id="showFooter">
+      <div class="footerMessage">© Liana Penn 2017</div>
+    </footer>
